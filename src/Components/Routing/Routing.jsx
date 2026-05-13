@@ -8,8 +8,7 @@ const Routing = ({ cart, addToCart, increaseQty, decreaseQty }) => {
   return (
     <BrowserRouter>
       <Routes>
-        <Route 
-          path='/' 
+        <Route path='/'
           element={
             <HomePage 
               cart={cart}

@@ -7,7 +7,6 @@ import Footer from '../Components/Home/Footer/Footer'
 
 const HomePage = ({ cart, addToCart, increaseQty, decreaseQty }) => {
 
-  // ✅ ADD THIS
   const [showCart, setShowCart] = useState(false);
 
   return (
