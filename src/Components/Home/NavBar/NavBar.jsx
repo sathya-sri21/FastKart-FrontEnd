@@ -2,6 +2,8 @@ import React from "react";
 import "./Style.css";
 import logo from "../../../Assets/logo.png";
 import Cart from "../../Cart/Cart";
+import { FaShoppingCart } from "react-icons/fa";
+
 
 const NavBar = ({ cart = [], showCart, setShowCart, increaseQty, decreaseQty }) => {
 
@@ -41,7 +43,8 @@ const NavBar = ({ cart = [], showCart, setShowCart, increaseQty, decreaseQty }) 
             className="cart"
             onClick={() => setShowCart(!showCart)}
           >
-            🛒
+             <FaShoppingCart />
+            
             <span className="badge">{totalItems}</span>
           </div>
 
